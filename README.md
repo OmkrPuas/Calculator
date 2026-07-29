@@ -176,9 +176,16 @@ Backend
 go test -cover ./...
 ```
 
+For a detailed profile:
+
+```bash
+go test -coverprofile=coverage.out ./... && go tool cover -func=coverage.out
+```
+
 Frontend
 
 ```bash
+cd frontend/calculator
 npm run coverage
 ```
 

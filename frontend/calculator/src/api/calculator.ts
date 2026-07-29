@@ -6,7 +6,7 @@ export type CalculateRequest = {
   b: number
 }
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: (import.meta.env.VITE_API_BASE_URL as string) || 'http://localhost:8080',
   timeout: 5000,
   headers: { 'Content-Type': 'application/json' },
@@ -20,12 +20,18 @@ export async function calculate(payload: CalculateRequest): Promise<number> {
     }
     throw new Error(res.data?.error || 'invalid response from server')
   } catch (err: any) {
-    if (err.response && err.response.data && err.response.data.error) {
-      throw new Error(err.response.data.error)
+    if (axios.isAxiosError(err)) {
+      if (err.response?.data?.error) {
+        throw new Error(err.response.data.error)
+      }
+      if (err.code === 'ECONNABORTED') {
+        throw new Error('request timeout')
+      }
+      if (err.request) {
+        throw new Error('backend unavailable')
+      }
+      throw new Error('network error')
     }
-    if (err.code === 'ECONNABORTED') {
-      throw new Error('request timeout')
-    }
-    throw new Error(err.message || 'network error')
+    throw new Error(err?.message || 'network error')
   }
 }

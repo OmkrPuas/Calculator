@@ -74,8 +74,9 @@ export default function Calculator() {
       <h1>Calculator</h1>
 
       <div className="form-row">
-        <label>Value A</label>
+        <label htmlFor="value-a">Value A</label>
         <input
+          id="value-a"
           aria-label="value-a"
           type="text"
           value={a}
@@ -84,8 +85,9 @@ export default function Calculator() {
       </div>
 
       <div className="form-row">
-        <label>Value B</label>
+        <label htmlFor="value-b">Value B</label>
         <input
+          id="value-b"
           aria-label="value-b"
           type="text"
           value={b}

@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"io"
 	"log"
 	"net/http"
 	"runtime/debug"
@@ -28,6 +29,9 @@ func CORS() func(http.Handler) http.Handler {
 
 // Logging returns a middleware that logs requests and durations.
 func Logging(logger *log.Logger) func(http.Handler) http.Handler {
+	if logger == nil {
+		logger = log.New(io.Discard, "", 0)
+	}
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			start := time.Now()
@@ -40,6 +44,9 @@ func Logging(logger *log.Logger) func(http.Handler) http.Handler {
 
 // Recover returns a middleware that recovers from panics and returns 500.
 func Recover(logger *log.Logger) func(http.Handler) http.Handler {
+	if logger == nil {
+		logger = log.New(io.Discard, "", 0)
+	}
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			defer func() {
