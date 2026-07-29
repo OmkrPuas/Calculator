@@ -7,6 +7,9 @@ const operations = [
   { value: 'subtract', label: 'Subtraction (-)' },
   { value: 'multiply', label: 'Multiplication (×)' },
   { value: 'divide', label: 'Division (÷)' },
+  { value: 'exponent', label: 'Exponentiation (^)' },
+  { value: 'sqrt', label: 'Square Root (√)' },
+  { value: 'percentage', label: 'Percentage (%)' },
 ]
 
 export default function Calculator() {
@@ -21,20 +24,37 @@ export default function Calculator() {
     setError(null)
     setResult(null)
 
-    if (a.trim() === '' || b.trim() === '') {
-      setError('Both inputs are required')
+    if (a.trim() === '') {
+      setError('Value A is required')
       return
     }
 
     const aNum = Number(a)
-    const bNum = Number(b)
-    if (Number.isNaN(aNum) || Number.isNaN(bNum)) {
-      setError('Inputs must be valid numbers')
+    if (Number.isNaN(aNum)) {
+      setError('Value A must be a valid number')
       return
+    }
+
+    let bNum = 0
+    if (op !== 'sqrt') {
+      if (b.trim() === '') {
+        setError('Value B is required for this operation')
+        return
+      }
+      bNum = Number(b)
+      if (Number.isNaN(bNum)) {
+        setError('Value B must be a valid number')
+        return
+      }
     }
 
     if (op === 'divide' && bNum === 0) {
       setError('Division by zero is not allowed')
+      return
+    }
+
+    if (op === 'sqrt' && aNum < 0) {
+      setError('Square root of negative number is not allowed')
       return
     }
 
@@ -70,6 +90,8 @@ export default function Calculator() {
           type="text"
           value={b}
           onChange={(e) => setB(e.target.value)}
+          disabled={op === 'sqrt'}
+          placeholder={op === 'sqrt' ? 'Not required for square root' : ''}
         />
       </div>
 
