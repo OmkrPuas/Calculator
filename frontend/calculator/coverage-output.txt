@@ -1,0 +1,825 @@
+﻿
+[7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90mC:/Users/ASROCK/Documents/GitHub/Calculator/frontend/calculator[39m
+[2m      Coverage enabled with [22m[33mv8[39m
+
+ [32mÔ£ô[39m src/api/calculator.test.ts[2m > [22mcalculator api[2m > [22mreturns result when response includes result
+ [32mÔ£ô[39m src/api/calculator.test.ts[2m > [22mcalculator api[2m > [22mthrows error when server returns error
+ [32mÔ£ô[39m src/api/calculator.test.ts[2m > [22mcalculator api[2m > [22mthrows backend unavailable when request could not reach backend
+node.exe : [90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mhandles basic input and 
+addition[22m[39m
+En línea: 1 Carácter: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([90mstderr[2m...ition[22m[39m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mperforms exponent operation and displays 
+result[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mperforms exponent operation and displays 
+result[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mhandles basic input and addition[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mperforms exponent operation and displays 
+result[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mhandles basic input and addition[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mrenders form controls and calculates values[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mperforms exponent operation and displays 
+result[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mhandles basic input and addition[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mrenders form controls and calculates values[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+ [32mÔ£ô[39m src/pages/ModernCalculator.test.tsx[2m > [22mModernCalculator[2m > [22mperforms exponent operation and displays result[33m 335[2mms[22m[39m
+ [32mÔ£ô[39m src/pages/TraditionalCalculator.test.tsx[2m > [22mTraditionalCalculator[2m > [22mhandles basic input and addition[33m 351[2mms[22m[39m
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mrenders form controls and calculates values[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mshows ERR on invalid sqrt input[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mshows ERR for invalid square root value[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mshows ERR on invalid sqrt input[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mshows ERR for invalid square root value[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mrenders form controls and calculates values[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+ [32mÔ£ô[39m src/pages/Calculator.test.tsx[2m > [22mCalculator page[2m > [22mrenders form controls and calculates values[33m 414[2mms[22m[39m
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mshows ERR for invalid square root value[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mshows ERR on invalid sqrt input[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mshows validation error when valueB is required but 
+empty[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mshows ERR on invalid sqrt input[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/ModernCalculator.test.tsx[2m > [22m[2mModernCalculator[2m > [22m[2mshows ERR for invalid square root value[22m[39m
+Warning: An update to ModernCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at ModernCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\ModernCalculator.tsx:5:29)
+
+ [32mÔ£ô[39m src/pages/TraditionalCalculator.test.tsx[2m > [22mTraditionalCalculator[2m > [22mshows ERR on invalid sqrt input
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mcalculates percentage correctly[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+ [32mÔ£ô[39m src/pages/ModernCalculator.test.tsx[2m > [22mModernCalculator[2m > [22mshows ERR for invalid square root value
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mshows validation error when valueB is required but 
+empty[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+ [32mÔ£ô[39m src/pages/Calculator.test.tsx[2m > [22mCalculator page[2m > [22mshows validation error when valueB is required but empty
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mcalculates percentage correctly[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mshows backend unavailable message when api call fails due 
+to server unreachability[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+[90mstderr[2m | src/pages/TraditionalCalculator.test.tsx[2m > [22m[2mTraditionalCalculator[2m > [22m[2mcalculates percentage correctly[22m[39m
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+Warning: An update to TraditionalCalculator inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at TraditionalCalculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\TraditionalCalculator.tsx:5:34)
+
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mshows backend unavailable message when api call fails due 
+to server unreachability[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+ [32mÔ£ô[39m src/pages/TraditionalCalculator.test.tsx[2m > [22mTraditionalCalculator[2m > [22mcalculates percentage correctly
+[90mstderr[2m | src/pages/Calculator.test.tsx[2m > [22m[2mCalculator page[2m > [22m[2mshows backend unavailable message when api call fails due 
+to server unreachability[22m[39m
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+Warning: An update to LegacyForm inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at LegacyForm (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:84:43)
+    at div
+    at div
+    at div
+    at Calculator (C:\Users\ASROCK\Documents\GitHub\Calculator\frontend\calculator\src\pages\Calculator.tsx:14:53)
+
+ [32mÔ£ô[39m src/pages/Calculator.test.tsx[2m > [22mCalculator page[2m > [22mshows backend unavailable message when api call fails due to server unreachability
+
+[2m Test Files [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m      Tests [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m   Start at [22m 18:19:14
+[2m   Duration [22m 2.71s[2m (transform 100ms, setup 445ms, collect 1.29s, tests 2.16s, environment 3.94s, prepare 508ms)[22m
+
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   76.66 |    58.09 |      54 |   76.66 |                   
+ src               |       0 |        0 |       0 |       0 |                   
+  App.tsx          |       0 |        0 |       0 |       0 | 1-12              
+  main.tsx         |       0 |        0 |       0 |       0 | 1-10              
+ src/api           |   89.18 |    58.33 |     100 |   89.18 |                   
+  calculator.ts    |   89.18 |    58.33 |     100 |   89.18 | 28-29,33-34       
+ src/pages         |   79.57 |    59.34 |   55.31 |   79.57 |                   
+  Calculator.tsx   |   90.32 |    63.88 |      75 |   90.32 | ...82,86-88,91-93 
+  ...alculator.tsx |   73.28 |    54.16 |   41.66 |   73.28 | ...61,82-87,91-98 
+  ...alculator.tsx |   73.33 |    58.06 |   66.66 |   73.33 | ...52-54,71,89-94 
+-------------------|---------|----------|---------|---------|-------------------

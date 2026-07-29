@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"bytes"
 	"io"
 	"log"
 	"net/http"
@@ -24,6 +25,26 @@ func TestCORS_OptionsRequest(t *testing.T) {
 	}
 	if rr.Header().Get("Access-Control-Allow-Origin") != "*" {
 		t.Fatalf("expected CORS allow origin *, got %q", rr.Header().Get("Access-Control-Allow-Origin"))
+	}
+}
+
+func TestLogging_LogsRequest(t *testing.T) {
+	var buf bytes.Buffer
+	logger := log.New(&buf, "", 0)
+	handler := Logging(logger)(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+	}))
+
+	req := httptest.NewRequest(http.MethodGet, "/calculate", nil)
+	rr := httptest.NewRecorder()
+
+	handler.ServeHTTP(rr, req)
+
+	if rr.Code != http.StatusOK {
+		t.Fatalf("expected status 200, got %d", rr.Code)
+	}
+	if !strings.Contains(buf.String(), "GET /calculate") {
+		t.Fatalf("expected log entry for request, got %q", buf.String())
 	}
 }
 

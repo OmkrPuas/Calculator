@@ -101,7 +101,7 @@ export default function ModernCalculator({ title = 'Modern', onCalculate }: Prop
     <div className="modern-calc">
       <div className="modern-panel">
         <div className="modern-row">
-          <div className="modern-display">{display}</div>
+          <div className="modern-display" role="status">{display}</div>
         </div>
         <div className="modern-keys">
           <button type="button" onClick={()=>chooseOp('^')}>^</button>

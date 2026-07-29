@@ -20,8 +20,13 @@ func main() {
 	calcSvc := services.NewCalculatorService()
 	router := buildRouter(calcSvc, logger)
 
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
 	srv := &http.Server{
-		Addr:         ":8080",
+		Addr:         ":" + port,
 		Handler:      router,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
