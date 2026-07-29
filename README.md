@@ -1,29 +1,19 @@
 # Full Stack Calculator
 
-A full-stack calculator application built as part of a technical assessment.
+A full-stack calculator application with dual UI modes and a Go backend calculator API.
 
-The project consists of:
+## Overview
 
-- **Frontend:** React + TypeScript + Vite
-- **Backend:** Go REST API
-- **Communication:** HTTP REST returning JSON
+This repository contains a React frontend and a Go backend that exposes a `/calculate` REST API. The frontend supports two calculator styles: a traditional calculator and a modern calculator, both with value entry, operator selection, and result display.
 
----
+## Features
 
-# Features
-
-## Supported Operations
-
-- Addition
-- Subtraction
-- Multiplication
-- Division
-
-Optional (planned):
-
-- Exponentiation
-- Square Root
-- Percentage
+- Arithmetic operations: add, subtract, multiply, divide
+- Extended operations: exponentiation, square root, percentage
+- Dual frontend UI modes: Traditional and Modern
+- Responsive layout with mobile-only controls
+- API validation and error handling
+- Docker deployment support
 
 ---
 
@@ -188,6 +178,31 @@ Frontend
 cd frontend/calculator
 npm run coverage
 ```
+
+---
+
+# Docker
+
+Build and run the single combined container:
+
+```bash
+docker build -t calculator-app .
+docker run -p 8080:8080 -e STATIC_DIR=/app/frontend/dist calculator-app
+```
+
+The app will be available at:
+
+```bash
+http://localhost:8080
+```
+
+Or use Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+This starts the combined backend and frontend container on port 8080.
 
 ---
 

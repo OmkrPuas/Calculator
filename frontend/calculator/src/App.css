@@ -182,3 +182,97 @@
     border-right-color: var(--border);
   }
 }
+
+/* Dual calculator layout */
+.dual-calculator-root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  width: 100%;
+}
+
+.calc-title {
+  width: 100%;
+  margin: 0;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #0d3b7b, #2aa6c0);
+  font-size: 1.8rem;
+  box-shadow: inset 0 -3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.dual-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  padding: 28px 16px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.pane {
+  position: relative;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow, 0 8px 24px rgba(0,0,0,0.08));
+  min-height: 60vh;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pane.dim { opacity: 0.45 }
+
+/* Traditional calculator */
+.traditional-calc { display:flex; flex-direction:column; gap:12px }
+.pane.left { background: linear-gradient(180deg, #020804, #091f0f); color:#b8ffb8; border:1px solid rgba(0,255,70,0.08) }
+.pane.left .trad-screen { background:#031006; color:#39ff14; font-family: 'Courier New', monospace; padding:14px; border-radius:6px; font-size:26px; text-align:right; box-shadow: inset 0 -6px 24px rgba(0,0,0,0.6) }
+.trad-keys { display:flex; gap:12px }
+.trad-keys .num-keys { display:grid; grid-template-columns: repeat(3,1fr); gap:8px; flex:1 }
+.trad-keys .ops { display:flex; flex-direction:column; gap:8px }
+.trad-keys .ops-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:8px; align-items:stretch }
+.trad-keys .ops-grid button { padding:12px 14px; border-radius:8px; background:#06220f; color:#b8ffb8; border:1px solid rgba(57,255,20,0.08); font-weight:700 }
+.trad-keys .ops-grid button:hover { filter:brightness(1.06) }
+.trad-keys .ops-grid button:nth-child(8) { background: linear-gradient(180deg,#ff8a8a,#ff5a5a); color:#fff }
+.trad-keys button { padding:12px 14px; border-radius:6px; background: #05200a; color:#a8ff9a; border:1px solid rgba(57,255,20,0.12); font-weight:600 }
+.trad-keys .equals-trad { background: linear-gradient(180deg,#39ff14,#1fbf00); color:#001100; font-weight:800; font-size:20px; padding:14px 18px; border-radius:8px }
+.trad-keys .equals-trad:hover { filter:brightness(1.06) }
+.trad-keys button:hover { filter:brightness(1.08) }
+
+/* give left pane a subtle matrix backdrop */
+.pane.left::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(0,0,0,0.18), transparent 60%), repeating-linear-gradient(180deg, rgba(0,255,70,0.02) 0 1px, transparent 1px 22px); border-radius:12px; pointer-events:none }
+
+.pane.right { background: linear-gradient(180deg, #fdfdff, #e8f2ff); color:#111 }
+.modern-calc { display:flex; flex-direction:column; gap:12px; width: min(520px, 100%); margin: 0 auto }
+.modern-hero h2 { margin:0 }
+.modern-sub { margin:4px 0 12px; color:#666 }
+.modern-panel { background: transparent; padding:12px; border-radius:8px }
+.modern-display { background: #0f1724; color:#e6f7ff; padding:14px; border-radius:10px; text-align:right; font-size:26px; box-shadow: 0 10px 24px rgba(16,24,40,0.12) }
+.modern-keys { display:grid; grid-template-columns: repeat(4,1fr); gap:10px; margin-top:12px }
+.modern-keys button { padding:14px; border-radius:12px; border:none; background:linear-gradient(180deg,#ffffff,#f3f6fb); box-shadow: 0 6px 18px rgba(16,24,40,0.08); font-weight:600; color: #111 }
+.modern-keys button:hover { transform: translateY(-2px) }
+.modern-keys .op { background: linear-gradient(180deg,#ffd6a8,#ffb86b); color:#111 }
+.modern-keys .accent { background: linear-gradient(180deg,#ffe6b8,#ffd3a3) }
+.modern-keys .equals { grid-column: 4 / 5; background: linear-gradient(180deg,#7be6ff,#6bd3ff) }
+.modern-keys .zero { grid-column: span 1 }
+
+/* Mobile behavior */
+@media (max-width: 700px) {
+  .dual-wrap { display: block }
+  .pane { display: none }
+  .pane.left.mobile-visible, .pane.right.mobile-visible { display: block }
+  .mobile-controls { display:flex; justify-content:center; gap:8px; margin-top:12px }
+  .mobile-controls button { padding:10px 14px; border-radius:999px; border:1px solid #ddd; background:#fff; color:#111 }
+}
+
+@media (min-width: 701px) {
+  .mobile-controls { display: none !important }
+}
+

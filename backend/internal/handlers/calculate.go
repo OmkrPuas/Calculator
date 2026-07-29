@@ -49,3 +49,7 @@ func calculateHandler(calc services.CalculatorService, logger *log.Logger) http.
 		writeJSON(w, http.StatusOK, models.CalculateResponse{Result: result})
 	}
 }
+
+func CalculateHandler(calc services.CalculatorService, logger *log.Logger) http.HandlerFunc {
+	return calculateHandler(calc, logger)
+}

@@ -1,24 +1,58 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { calculate } from '../api/calculator'
+import TraditionalCalculator from './TraditionalCalculator'
+import ModernCalculator from './ModernCalculator'
 import '../App.css'
 
-const operations = [
-  { value: 'add', label: 'Addition (+)' },
-  { value: 'subtract', label: 'Subtraction (-)' },
-  { value: 'multiply', label: 'Multiplication (×)' },
-  { value: 'divide', label: 'Division (÷)' },
-  { value: 'exponent', label: 'Exponentiation (^)' },
-  { value: 'sqrt', label: 'Square Root (√)' },
-  { value: 'percentage', label: 'Percentage (%)' },
-]
-
 export default function Calculator() {
+  const [active, setActive] = useState<'both' | 'traditional' | 'modern'>('both')
+  const [mobileView, setMobileView] = useState<'left' | 'right'>('left')
+
+  return (
+    <div>
+      <h1 className="calc-title">Calculator — Two Styles</h1>
+      <div className="dual-calculator-root">
+
+
+        <div className="dual-wrap">
+          <section className={`pane left ${active === 'modern' ? 'dim' : ''} ${mobileView === 'left' ? 'mobile-visible' : ''}`}>
+            <TraditionalCalculator />
+          </section>
+
+          <section className={`pane right ${active === 'traditional' ? 'dim' : ''} ${mobileView === 'right' ? 'mobile-visible' : ''}`}>
+            <ModernCalculator />
+          </section>
+        </div>
+        <div className="mobile-controls">
+          <button onClick={() => setMobileView('left')} aria-pressed={mobileView === 'left'}>Traditional</button>
+          <button onClick={() => setMobileView('right')} aria-pressed={mobileView === 'right'}>Modern</button>
+        </div>
+
+        <div style={{ position: 'absolute', left: '-9999px', top: '-9999px' }}>
+          <LegacyForm />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function LegacyForm() {
   const [a, setA] = useState('')
   const [b, setB] = useState('')
   const [op, setOp] = useState('add')
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState<number | null>(null)
   const [error, setError] = useState<string | null>(null)
+
+  const operations = [
+    { value: 'add', label: 'Addition (+)' },
+    { value: 'subtract', label: 'Subtraction (-)' },
+    { value: 'multiply', label: 'Multiplication (×)' },
+    { value: 'divide', label: 'Division (÷)' },
+    { value: 'exponent', label: 'Exponentiation (^)' },
+    { value: 'sqrt', label: 'Square Root (√)' },
+    { value: 'percentage', label: 'Percentage (%)' },
+  ]
 
   const handleCalculate = async () => {
     setError(null)
@@ -70,9 +104,7 @@ export default function Calculator() {
   }
 
   return (
-    <div className="calculator-root">
-      <h1>Calculator</h1>
-
+    <div className="legacy-form" style={{ marginTop: 20 }}>
       <div className="form-row">
         <label htmlFor="value-a">Value A</label>
         <input
